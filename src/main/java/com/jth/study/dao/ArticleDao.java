@@ -4,6 +4,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.jth.study.dto.Article;
+import com.jth.study.dto.Board;
 
 @Mapper
 public interface ArticleDao {
@@ -16,4 +17,6 @@ public interface ArticleDao {
 	int getLastInsertId();
 
 	void deleteArticleById(@Param("id") int id);
+
+	Board getBoardById(@Param("id") int id);
 }

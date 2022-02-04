@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.jth.study.dao.ArticleDao;
 import com.jth.study.dto.Article;
+import com.jth.study.dto.Board;
 import com.jth.study.dto.ResultData;
 
 @Service
@@ -57,5 +58,10 @@ public class ArticleService {
 
 	public Article getArticleById(int id) {
 		return articleDao.getArticleById(id);
+	}
+
+	public Board getBoardById(int id) {
+
+		return articleDao.getBoardById(id);
 	}
 }
