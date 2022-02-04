@@ -2,10 +2,12 @@ package com.jth.study.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-public @AllArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
-class Board {
+public class Board {
 	private int id;
 	private String regDate;
 	private String updateDate;
